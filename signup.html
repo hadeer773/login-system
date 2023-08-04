@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hadeermahmoud"> 
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section id="home">
+        
+<span class="d-none" id="username"></span>
+
+<div class="container my-5 text-center">
+    <div class="info m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+
+        <input id="signupName" oninput="validationName()" class="form-control my-3" placeholder="Enter your name" type="text">
+        <p id="nameHint" class="alert alert-info d-none"> you must follow examplename12</p>
+
+        <input id="signupEmail" oninput="validationEmail()" class="form-control my-3" placeholder="Enter your email" type="email">
+        <p id="emailHint" class="alert alert-info d-none"> you must follow examplename.gmail.com</p>
+
+        <input id="signupPassword" oninput="validationPassword()" class="form-control my-3" placeholder="Enter  password" type="password">
+        <p id="passwordHint" class="alert alert-info d-none" > you must follow anycharacterfrom 8-32</p>
+        <p id="exit" ></p>
+
+        <button onclick=" signUp()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+        <p class="text-white">You have an account? <a class="text-white" href="index.html">Signin</a></p>
+    </div>
+</div>
+
+    </section>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
